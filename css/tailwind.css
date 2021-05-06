@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+
+.hero{
+    z-index: -10;
+}
+
+.header{
+    height:400px;
+}
+
+.card{
+@apply flex flex-shrink-0;
+}
+
+.link{
+    @apply relative block mx-2;
+}
+
+.content{
+    @apply absolute inset-0 bg-black opacity-75 p-4 hidden flex-col justify-end text-white cursor-pointer;
+}
+
+.title{
+    @apply text-lg mb-2;
+}
+
+.text{
+    @apply leading-normal select-none;
+}
+
+.trailer{
+    height: 300px;
+}
+
+.btn-primary{
+    @apply bg-transparent uppercase border border-yellow-600 text-yellow-600 px-10 py-3 inline-block;
+}
+
+.btn-primary:hover{
+    @apply bg-yellow-600 text-white cursor-pointer;
+}
+
+@screen md{
+    .btn-teal{
+        @apply text-lg;
+    }
+
+    .header{
+        height: 650px;
+    }
+
+    .trailer{
+        height: 800px ;
+    }
+}
+
+.header{
+    height:500px;
+}
+
+@tailwind utilities;
+
+body {
+    font-family: 'Playfair Display', serif;
+}

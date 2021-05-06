@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pretty Flowers</title>
+</head>
+<body 
+    class="bg-gray-800 font-sans leading-normal tracking-normal">
+
+    <!--Header start-->
+    <header class="header relative overflow-hidden">
+
+    <!--Navbar start-->
+    <nav 
+        class="flex flex-wrap items-center justify-between bg-gray-800 w-full p-6 z-10 top-0 bg-opacity-50"
+    >
+        <div 
+            class="flex flex-row items-center flex-shrink-0 text-pink-100 ">
+            <img class="h-8 w-8" src="img/icon1.jpg" alt=""/>
+            <a 
+            class="uppercase pl-3 font-medium text-2xl" 
+            href="#"> 
+                Pretty Flowers
+            </a>
+        </div>
+
+        <!--Menu Toggle Button-->
+        <div class="block lg:hidden">
+            <button 
+                id="nav-toggle"
+                class="p-2 border rounded rounded-full text-gray-500 border-gray-500 hover:text-white hover:border-white">
+                <svg 
+                    class="fill-current h-3 w-3"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!--Menu Items-->
+        <div 
+            id="nav-content" 
+            class="hidden w-full pt-6 lg:flex lg:items-center lg:w-auto lg:block lg:pt-0">
+            <ul 
+                class="uppercase text-white lg:flex flex-1">
+                <li>
+                    <a 
+                        href="#" 
+                        class="inline-block py-2 px-4 text-gray-300 hover:text-white ">Эхлэл
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="#" 
+                        class="inline-block py-2 px-4 text-gray-300 hover:text-white">Бидний тухай
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="#" 
+                        class="inline-block py-2 px-4 text-gray-300 hover:text-white">Үйлчилгээ
+                    </a>
+                </li>
+                <li>
+                    <a 
+                        href="#" 
+                        class="inline-block py-2 px-4 text-gray-300 hover:text-white">Холбоо барих
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Navbar end-->
+
+    <!--Hero start-->
+    <div class="hero absolute inset-0 sm:hidden">
+        <img 
+            src="img/pexels-pixabay-289323.jpg" 
+            alt="" 
+            class="w-full h-full object-cover"/>
+    </div>
+
+    <div class="hero absolute hidden inset-0 sm:block">
+        <video 
+        src="img/video.mp4" class="w-full h-full   object-cover" 
+        autoplay 
+        muted 
+        loop>
+    </video>
+    </div>
+
+    <!--Hero end-->
+    </header>
+    <!--Header end-->
+
+    <!--Slider start-->
+
+        <!--Navigation start-->
+            <div class="container my-6">
+                <ul class="flex text-gray-300 justify-center md:justify-start md:ml-24">
+                    <li class="pr-2">Бүх цэцэгс</li>
+                    <li class="pr-2">|</li>
+                    <li class="text-yellow-500 pr-2">Хамгийн сайхан цэцэгс</li>
+                </ul>
+            </div>
+        <!--Navigation end-->
+
+        <!--Previous button-->
+        <div class="container flex items-center mx-auto">
+            <button class="h-16 w-16 text-gray-300 hidden md:block" id="prev-btn" type="button">
+                <svg 
+                    class="fill-current"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path 
+                    d="M7.05 9.293L6.343 10 12 15.657l1.414-1.414L9.172 10l4.242-4.243L12 4.343z"/>
+                </svg>
+            </button>
+
+            <!--Cards-->
+            <div class="container mx-auto mb-16 flex justify-center">
+                <div 
+                    class="flex flex-col items-stretch justify-start space-y-6 md:flex-row md:overflow-hidden mf:flex-no-wrap md:space-y-0"
+                    id="container">
+            <!------------------------------------------------------------------------------------->
+                    <div class="card">
+                        <a href="#" class="link group">
+                            <div class="content group-hover:flex">
+                                <h3 class="title">
+                                    Daisy
+                                </h3>
+                                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, optio! Iure sunt consequatur quos labore, voluptatem provident itaque consequuntur odio?
+                                </p>
+                            </div>
+                            <img
+                            src="img/daisy.jpg" alt="">
+                        </a>
+                    </div>
+            <!------------------------------------------------------------------------------------->
+                    <div class="card">
+                        <a href="#" class="link group">
+                            <div class="content group-hover:flex">
+                                <h3 class="title">
+                                    Rose
+                                </h3>
+                                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, optio! Iure sunt consequatur quos labore, voluptatem provident itaque consequuntur odio?
+                                </p>
+                            </div>
+                            <img src="img/rose.jpg" alt="">
+                        </a>
+                    </div>
+            <!------------------------------------------------------------------------------------->
+                    <div class="card">
+                        <a href="#" class="link group">
+                            <div class="content group-hover:flex">
+                                <h3 class="title">
+                                    Iris
+                                </h3>
+                                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, optio! Iure sunt consequatur quos labore, voluptatem provident itaque consequuntur odio?
+                                </p>
+                            </div>
+                            <img src="img/iris.jpg" alt="">
+                        </a>
+                    </div>
+            <!------------------------------------------------------------------------------------->
+                    <div class="card">
+                        <a href="#" class="link group">
+                            <div class="content group-hover:flex">
+                                <h3 class="title">
+                                    Poppy
+                                </h3>
+                                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, optio! Iure sunt consequatur quos labore, voluptatem provident itaque consequuntur odio?
+                                </p>
+                            </div>
+                            <img src="img/poppy.jpg" alt="">
+                        </a>
+                    </div>
+            <!------------------------------------------------------------------------------------->
+                    <div class="card">
+                        <a href="#" class="link group">
+                            <div class="content group-hover:flex">
+                                <h3 class="title">
+                                    Orchid
+                                </h3>
+                                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, optio! Iure sunt consequatur quos labore, voluptatem provident itaque consequuntur odio?
+                                </p>
+                            </div>
+                            <img src="img/orchid.jpg" alt="">
+                        </a>
+                    </div>
+            <!------------------------------------------------------------------------------------->
+                    <div class="card">
+                        <a href="#" class="link group">
+                            <div class="content group-hover:flex">
+                                <h3 class="title">
+                                    Pansy
+                                </h3>
+                                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, optio! Iure sunt consequatur quos labore, voluptatem provident itaque consequuntur odio?
+                                </p>
+                            </div>
+                            <img src="img/pansy.jpg" alt="">
+                        </a>
+                    </div>
+            <!------------------------------------------------------------------------------------->
+                    <div class="card">
+                        <a href="#" class="link group">
+                            <div class="content group-hover:flex">
+                                <h3 class="title">
+                                    Tulip
+                                </h3>
+                                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, optio! Iure sunt consequatur quos labore, voluptatem provident itaque consequuntur odio?
+                                </p>
+                            </div>
+                            <img src="img/tulip.jpg" alt="">
+                        </a>
+                    </div>
+            <!------------------------------------------------------------------------------------->
+                    <div class="card">
+                        <a href="#" class="link group">
+                            <div class="content group-hover:flex">
+                                <h3 class="title">
+                                    violet
+                                </h3>
+                                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, optio! Iure sunt consequatur quos labore, voluptatem provident itaque consequuntur odio?
+                                </p>
+                            </div>
+                            <img src="img/violet.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---Nest button-->
+            <button class="h-16 w-16 text-gray-300 hidden md:block" id="next-btn" type="button">
+                <svg 
+                    class="fill-current"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
+                </svg>
+            </button>
+        </div>
+    <!--Slider end-->
+
+    <!--About section start-->
+    <div class="container mx-auto py-8 text-pink-200 text-center">
+        <div class="text-purple-400 mb-4 text-base md:text-lg">
+            Цэцэг <span>|</span> Ваар <span>|</span> Цэцгийн баглаа 
+        </div>
+
+        <h2 class="text-2xl md:text-3xl font-sans font-bold mb-4">"Pretty Flowers"-ийн тухай</h2>
+
+        <p class="max-w-md opacity-75 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quaerat! Est adipisci dolor tempore dolorum et deleniti. Praesentium, quae! Quis quae nihil eos molestias error iure deleniti! Pariatur recusandae ea asperiores odit natus sed totam iure, enim eos libero fuga?</p>
+        <a href="#" class="text-yellow-500 my-4  inline-block">Дэлгэрэнгүй+</a>
+    </div>
+    <!--About section end-->
+
+    <!--New trailer section start-->
+    <div class=" trailer relative flex flex-wrap items-center ">
+        <div class="absolute inset-0 w-full h-full opacity-75">
+            <img 
+                src="img/rose2.jpg" 
+                class="object-cover w-full h-full" 
+                alt="rose">
+        </div>
+        <div class="container mx-auto text-center text-white w-full flex flex-wrap z-10 mb-16">
+            <h3 class="text-3xl font-sans font-bold mb-4 w-full leading-tight md:text-5xl">Тун удахгүй
+
+            </h3>
+            <div class="mx-auto mb-8 md:mb-16">
+                <a href="#" class="inline-flex items-center justify-center text-white w-auto hover:opacity-60">
+                    <svg 
+                        class="fill-current text-white w-8 h-8 mx-2 "
+                        width="48"
+                        height="48"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 20 20">
+                        <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM7 6l8 4-8 4V6z"/>
+                    </svg>
+                    <span class="border-b border-white pb-1">Видеог тоглуулах</span>
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="#" class="inline-flex items-center justify-center text-white border bg-transparent px-8 py-3 rounded hover:bg-white hover:text-black">Бүх трэйлерүүд+</a>
+            </div>
+        </div>
+    </div>
+    <!--New trailer section end-->
+
+    <!--Footer Start-->
+    <footer class="container mx-auto text-white py-16 px-6 md:px-16 ">
+        <div class="border-l border-white pl-4 md:pl-8">
+            <p>Pretty Flowers </p>
+            <h3 class="text-3xl font-sans font-semibold mb-6 md:text-5xl">Мэдээлэл авах</h3>
+            <form action="#">
+                <div class="flex items-center justify-start flex-wrap">
+                    <input 
+                        type="email" 
+                        class="border text-white bg-transparent py-3 leading-tight px-4 w-full md:w-1/3 mr-4 mb-4 md:mb-0" placeholder="И-мэйл хаягаа бичнэ үү." 
+                    />
+                    <input type="submit" class="btn-primary" value="Бүртгүүлэх">
+                </div>
+            </form>
+        </div>
+        <div class="flex items-center justify-start flex-wrap mt-10">
+            <p class="font-bold opacity-50 mr-10">&copy; 2021 Pretty Flowers. All rights reserved.</p>
+            <div class="flex items-center justify-start">
+                <a href="#" class="">
+                    <svg 
+                        class="fill-current text-white w-4 h-4 mx-3 opacity-50 hover:opacity-75"
+                        role="img" 
+                        viewBox="0 0 24 24" 
+                        xmlns="http://www.w3.org/2000/svg">
+                        <title>Instagram icon</title>
+                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg 
+                        class="fill-current text-white w-4 h-4 mx-3 opacity-50 hover:opacity-75"
+                        role="img" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24">
+                        <title>YouTube icon</title>
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg 
+                        class="fill-current text-white w-4 h-4 mx-3 opacity-50 hover:opacity-75"
+                        role="img" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24">
+                        <title>Facebook icon</title>
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <!--Scripts-->
+    <script>
+        //Javascript to toggle the menu
+        document.getElementById("nav-toggle").onclick=function(){
+            document.getElementById("nav-content").classList.toggle("hidden");
+        };
+    </script> 
+
+    <!--Slider controls-->
+    <script>
+        var button_next = document.getElementById("next-btn");
+        button_next.onclick = function(){
+            var container = document.getElementById("container");
+            sideScroll(container, "right", 25, 300, 50);
+        };
+        var button_prev = document.getElementById("prev-btn");
+        button_prev.onclick = function(){
+            var container = document.getElementById("container");
+            sideScroll(container, "left", 25, 300, 50);
+        };
+
+        function sideScroll(element, direction, speed, distance, step){
+            scrollAmount=0;
+            var slideTimer = setInterval(function(){
+                if(direction == "left"){
+                    element.scrollLeft -= step;
+                }else{
+                    element.scrollLeft += step;
+                }
+                scrollAmount += step;
+                if(scrollAmount >= distance){
+                    window.clearInterval(slideTimer);
+                }
+            }, speed);
+        }
+    </script>
+
+</body>
+</html>
